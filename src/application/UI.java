@@ -8,6 +8,11 @@ import java.util.Scanner;
 
 public class UI {
 
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
     public static ChessPosition readChessPosition(Scanner sc) {
         try {
             String s = sc.nextLine();
@@ -32,7 +37,7 @@ public class UI {
 
     private static void printPiece(ChessPiece piece, int row, int column) {
         if (piece == null && ((row % 2 == 0 && column % 2 != 0) || (row % 2 != 0 && column % 2 == 0))) {
-            System.out.print("▭");
+            System.out.print("\u25AD");
         } else if (piece == null) {
             System.out.print("▬");
         } else {
