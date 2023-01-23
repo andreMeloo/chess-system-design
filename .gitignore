@@ -1,1 +1,7 @@
-chess-system.iml
+/chess-system-design.iml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/encodings.xml
+/out/
+/.idea/workspace.xml
