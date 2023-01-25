@@ -1,5 +1,6 @@
 package chess.pieces;
 
+import application.UI;
 import boardgame.Board;
 import boardgame.Position;
 import chess.ChessPiece;
@@ -16,6 +17,7 @@ public class Rook extends ChessPiece {
         if (this.getColor().equals(Color.WHITE)) {
             return "\u2656";
         } else {
+            System.out.print(UI.ANSI_YELLOW);
             return "\u265C";
         }
     }
