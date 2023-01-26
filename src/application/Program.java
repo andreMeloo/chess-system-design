@@ -1,6 +1,5 @@
 package application;
 
-import boardgame.Board;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
@@ -43,7 +42,13 @@ public class Program {
                 if (chessMatch.getPromoted() != null) {
                     System.out.println("Enter piece for promotion");
                     System.out.print("(B - Bishop, N - Knight, R - Rook, Q - Queen): ");
-                    String type = sc.nextLine();
+                    String type = sc.nextLine().toUpperCase();
+                    while (!type.equals("Q") && !type.equals("N") && !type.equals("R") && !type.equals("B")) {
+                        System.out.println("Invalid value to piece!");
+                        System.out.println("Enter piece for promotion");
+                        System.out.print("(B - Bishop, N - Knight, R - Rook, Q - Queen): ");
+                        type = sc.nextLine().toUpperCase();
+                    }
                     chessMatch.replacePromotedPiece(type);
                 }
             } catch (ChessException | InputMismatchException e) {
