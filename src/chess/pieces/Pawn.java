@@ -1,5 +1,6 @@
 package chess.pieces;
 
+import application.UI;
 import boardgame.Board;
 import boardgame.Position;
 import chess.ChessPiece;
@@ -17,7 +18,7 @@ public class Pawn extends ChessPiece {
             return "\u2659";
         } else {
             System.out.print(ANSI_YELLOW);
-            return "\u2659";
+            return "\u2659" + UI.ANSI_RESET;
         }
     }
 

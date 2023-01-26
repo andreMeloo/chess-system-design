@@ -18,7 +18,7 @@ public class Bishop extends ChessPiece {
             return "\u2657";
         } else {
             System.out.print(UI.ANSI_YELLOW);
-            return "\u265d";
+            return "\u265d" + UI.ANSI_RESET;
         }
     }
 

@@ -18,7 +18,7 @@ public class Rook extends ChessPiece {
             return "\u2656";
         } else {
             System.out.print(UI.ANSI_YELLOW);
-            return "\u265C";
+            return "\u265C" + UI.ANSI_RESET;
         }
     }
 
