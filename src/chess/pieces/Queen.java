@@ -18,7 +18,7 @@ public class Queen extends ChessPiece {
             return "\u2655";
         } else {
             System.out.print(UI.ANSI_YELLOW);
-            return "\u265B" + UI.ANSI_RESET;
+            return "\u265B";
         }
     }
 

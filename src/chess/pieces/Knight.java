@@ -18,7 +18,7 @@ public class Knight extends ChessPiece {
             return "\u2658";
         } else {
             System.out.print(UI.ANSI_YELLOW);
-            return "\u265E" + UI.ANSI_RESET;
+            return "\u265E";
         }
     }
 

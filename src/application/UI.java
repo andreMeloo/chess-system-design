@@ -55,7 +55,11 @@ public class UI {
         System.out.println();
         System.out.println("Turn : " + chessMatch.getTurn());
         if (!chessMatch.getCheckMate()) {
-            System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+            if (chessMatch.getCurrentPlayer() == Color.BLACK) {
+                System.out.println("Waiting player: " + ANSI_YELLOW + chessMatch.getCurrentPlayer() + ANSI_RESET);
+            } else {
+                System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+            }
             if (chessMatch.getCheck()) {
                 System.out.println("CHECK!");
             }
@@ -108,7 +112,9 @@ public class UI {
         System.out.println("Captured pieces:");
         System.out.print("White: ");
         System.out.println(Arrays.toString(white.toArray()));
+        System.out.print(ANSI_YELLOW);
         System.out.print("Black: ");
         System.out.println(Arrays.toString(black.toArray()));
+        System.out.print(ANSI_RESET);
     }
 }

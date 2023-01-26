@@ -22,7 +22,7 @@ public class King extends ChessPiece {
             return "\u2654";
         } else {
             System.out.print(UI.ANSI_YELLOW);
-            return "\u265A" + UI.ANSI_RESET;
+            return "\u265A";
         }
     }
 
