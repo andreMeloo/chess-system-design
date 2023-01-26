@@ -181,6 +181,8 @@ public class ChessMatch {
         //Knight
         placeNewPiece('c',1,new Knight(board, Color.WHITE));
         placeNewPiece('f',1,new Knight(board, Color.WHITE));
+        //Queen
+        placeNewPiece('d',1,new Queen(board, Color.WHITE));
         //King
         placeNewPiece('e',1,new King(board, Color.WHITE));
         //Pawn
@@ -203,6 +205,8 @@ public class ChessMatch {
         //Knight
         placeNewPiece('c',8,new Knight(board, Color.BLACK));
         placeNewPiece('f',8,new Knight(board, Color.BLACK));
+        //Queen
+        placeNewPiece('d',8,new Queen(board, Color.BLACK));
         //King
         placeNewPiece('e',8,new King(board, Color.BLACK));
         //Pawn
